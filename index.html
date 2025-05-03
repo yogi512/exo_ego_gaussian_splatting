@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Exo-to-Ego View Translation using Gaussian Splatting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/images/favicon.ico">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</h1>
-    <p class="authors">Yogeshwar Boopathy<br>MSc Data Science & AI, University of Birmingham</p>
-
-    <div class="links">
-      <a href="paper.pdf">📄 Paper</a>
-      <a href="https://git.cs.bham.ac.uk/projects-2023-24/yxb340">💻 Code</a>
-      <a href="https://bham-my.sharepoint.com/...">📁 Dataset</a>
-      <a href="https://playcanvas.com/supersplat/editor/">🌐 Live Viewer</a>
+  <section class="hero is-light is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2">Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</h1>
+        <h2 class="subtitle is-4">Yogeshwar Boopathy<br>MSc Data Science & AI, University of Birmingham</h2>
+        <div class="buttons is-centered">
+          <a class="button is-link" href="paper.pdf" target="_blank">📄 Paper</a>
+          <a class="button is-primary" href="https://git.cs.bham.ac.uk/projects-2023-24/yxb340" target="_blank">💻 Code</a>
+          <a class="button is-info" href="https://bham-my.sharepoint.com/..." target="_blank">📁 Data</a>
+          <a class="button is-warning" href="https://playcanvas.com/supersplat/editor/" target="_blank">🌐 Viewer</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="teaser">
-      <img src="assets/teaser.png" alt="Teaser Image">
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Abstract</h2>
+      <p>
+        This project investigates the task of translating exo-centric video footage into photorealistic ego-centric views using 3D and 4D Gaussian Splatting. It aims to bridge the gap between third-person and first-person perspectives for applications in virtual reality, robotics, and surveillance. Our pipeline reconstructs dynamic 3D scenes using COLMAP and Gaussian rendering and achieves superior results over baselines like Pix2Pix and P-GAN in terms of SSIM (0.76), PSNR (23.35), and LPIPS (0.26).
+      </p>
     </div>
+  </section>
 
-    <h2>Abstract</h2>
-    <p>
-      This project explores the application of 3D and 4D Gaussian Splatting techniques to convert exocentric views into photorealistic egocentric perspectives. It addresses the challenges of spatial transformation, occlusion, and viewpoint discrepancy in tasks like VR, robotics, and AR. Our method outperforms baseline models (e.g., Pix2Pix, P-GAN) on metrics like SSIM, PSNR, and LPIPS.
-    </p>
-
-    <h2>Video Results</h2>
-    <video controls>
-      <source src="assets/demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <h2>Visualizations</h2>
-    <div class="images">
-      <img src="assets/render1.png" alt="Render 1">
-      <img src="assets/render2.png" alt="Render 2">
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Exo-Centric vs Ego-Centric Videos</h2>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <h3 class="title is-5">Exo-Centric</h3>
+          <video controls autoplay loop muted width="100%">
+            <source src="static/videos/work_exo.mov" type="video/mp4">
+          </video>
+          <video controls autoplay loop muted width="100%">
+            <source src="static/videos/vale_exo.mov" type="video/mp4">
+          </video>
+          <video controls autoplay loop muted width="100%">
+            <source src="static/videos/cs_exo.mov" type="video/mp4">
+          </video>
+        </div>
+        <div class="column has-text-centered">
+          <h3 class="title is-5">Ego-Centric</h3>
+          <video controls autoplay loop muted width="100%">
+            <source src="static/videos/work.mp4" type="video/mp4">
+          </video>
+          <video controls autoplay loop muted width="100%">
+            <source src="static/videos/vale.mp4" type="video/mp4">
+          </video>
+          <video controls autoplay loop muted width="100%">
+            <source src="static/videos/cs.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <h2>BibTeX</h2>
-    <pre>
-@misc{boopathy2025exo,
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">BibTeX</h2>
+      <pre><code>@misc{boopathy2025ego,
   title={Exo-Centric to Ego-Centric View Translation using Gaussian Splatting},
-  author={Boopathy, Yogeshwar},
+  author={Yogeshwar Boopathy},
   year={2025},
   note={MSc Dissertation, University of Birmingham},
-  url={https://yourusername.github.io/exo-to-ego-gaussian-splatting/}
-}
-    </pre>
+  url={https://yourusername.github.io/exo-to-ego-gaussian-splatting}
+}</code></pre>
+    </div>
+  </section>
 
-    <footer>
-      <p>Website template adapted from <a href="https://dynamic3dgaussians.github.io/">Dynamic 3D Gaussians</a>.</p>
-    </footer>
-  </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Built using <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">nerfies.github.io</a> template.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
