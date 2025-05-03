@@ -29,8 +29,25 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3">Abstract</h2>
       <p>
-        This project investigates the task of translating exo-centric video footage into photorealistic ego-centric views using 3D and 4D Gaussian Splatting. It aims to bridge the gap between third-person and first-person perspectives for applications in virtual reality, robotics, and surveillance. Our pipeline reconstructs dynamic 3D scenes using COLMAP and Gaussian rendering and achieves superior results over baselines like Pix2Pix and P-GAN in terms of SSIM (0.76), PSNR (23.35), and LPIPS (0.26).
-      </p>
+        Changing from a third-person to a first-person perspec-
+        tive is not as straightforward as pressing a button in video
+        games. In real life, translating exocentric (third-person) to
+        egocentric (first-person) perspectives poses significant chal-
+        lenges. Despite advances using GANs, diffusion models, and
+        other generative methods, existing techniques struggle with
+        large viewpoint shifts, occlusions, and the loss of fine details.
+        We propose a novel approach leveraging Gaussian splat-
+        ting, a rasterization-based technique that efficiently models
+        scenes as 3D Gaussian distributions. This method achieves
+        photorealistic rendering from sparse image datasets, reduc-
+        ing distortions and preserving intricate details, especially
+        in complex hand-object interaction scenarios. Quantitative
+        evaluations using SSIM and PSNR on real-world datasets
+        demonstrate significant improvements over traditional meth-
+        ods. Our approach advances the technical capabilities of
+        exo-to-ego view translation, paving the way for immersive
+        applications in robotics, virtual and augmented reality, and
+        human-computer interaction.      </p>
     </div>
   </section>
 
