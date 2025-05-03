@@ -1,40 +1,68 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0 20px;
     background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
   }
   
-  header {
+  .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  h1, h2 {
     text-align: center;
-    padding: 40px 0;
   }
   
-  nav a {
+  .authors {
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .links {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .links a {
     margin: 0 10px;
     text-decoration: none;
     color: #0366d6;
   }
   
-  section {
-    margin: 40px 0;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #eaeaea;
-    padding-bottom: 10px;
-  }
-  
-  video, img {
+  .teaser img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
-    height: auto;
+  }
+  
+  video {
     display: block;
     margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .images img {
+    max-width: 45%;
+  }
+  
+  pre {
+    background-color: #eee;
+    padding: 10px;
+    overflow-x: auto;
   }
   
   footer {
     text-align: center;
-    padding: 20px 0;
-    background-color: #eaeaea;
+    margin-top: 40px;
+    font-size: 0.9em;
   }
   

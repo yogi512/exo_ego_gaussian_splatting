@@ -2,42 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EgoSplat: Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</title>
+  <title>Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</h1>
-    <p><strong>Author:</strong> Yogeshwar Boopathy</p>
-    <p><strong>Affiliation:</strong> MSc Data Science & AI, University of Birmingham</p>
-    <nav>
-      <a href="paper.pdf">Paper</a>
-      <a href="https://git.cs.bham.ac.uk/projects-2023-24/yxb340">Code</a>
-      <a href="https://bham-my.sharepoint.com/...">Data</a>
-    </nav>
-  </header>
+    <p class="authors">Yogeshwar Boopathy<br>MSc Data Science & AI, University of Birmingham</p>
 
-  <section id="abstract">
+    <div class="links">
+      <a href="paper.pdf">📄 Paper</a>
+      <a href="https://git.cs.bham.ac.uk/projects-2023-24/yxb340">💻 Code</a>
+      <a href="https://bham-my.sharepoint.com/...">📁 Dataset</a>
+      <a href="https://playcanvas.com/supersplat/editor/">🌐 Live Viewer</a>
+    </div>
+
+    <div class="teaser">
+      <img src="assets/teaser.png" alt="Teaser Image">
+    </div>
+
     <h2>Abstract</h2>
-    <p>Your abstract goes here...</p>
-  </section>
+    <p>
+      This project explores the application of 3D and 4D Gaussian Splatting techniques to convert exocentric views into photorealistic egocentric perspectives. It addresses the challenges of spatial transformation, occlusion, and viewpoint discrepancy in tasks like VR, robotics, and AR. Our method outperforms baseline models (e.g., Pix2Pix, P-GAN) on metrics like SSIM, PSNR, and LPIPS.
+    </p>
 
-  <section id="video-results">
     <h2>Video Results</h2>
     <video controls>
-      <source src="assets/video1.mp4" type="video/mp4">
+      <source src="assets/demo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <!-- Add more videos as needed -->
-  </section>
 
-  <section id="visualizations">
     <h2>Visualizations</h2>
-    <img src="assets/image1.png" alt="Visualization 1">
-    <!-- Add more images as needed -->
-  </section>
+    <div class="images">
+      <img src="assets/render1.png" alt="Render 1">
+      <img src="assets/render2.png" alt="Render 2">
+    </div>
 
-  <section id="bibtex">
     <h2>BibTeX</h2>
     <pre>
 @misc{boopathy2025exo,
@@ -48,10 +48,10 @@
   url={https://yourusername.github.io/exo-to-ego-gaussian-splatting/}
 }
     </pre>
-  </section>
 
-  <footer>
-    <p>Website template adapted from <a href="https://dynamic3dgaussians.github.io/">Dynamic 3D Gaussians</a>.</p>
-  </footer>
+    <footer>
+      <p>Website template adapted from <a href="https://dynamic3dgaussians.github.io/">Dynamic 3D Gaussians</a>.</p>
+    </footer>
+  </div>
 </body>
 </html>
