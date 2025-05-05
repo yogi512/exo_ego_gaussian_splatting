@@ -13,18 +13,19 @@
   <section class="hero is-light is-small teaser">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title is-2 publication-title">EgoSplat:Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</h1>
-        <h3 class="subtitle is-4 publication-authors">
+        <h1 class="title is-2 publication-title">EgoSplat: Exo-Centric to Ego-Centric View Translation using Gaussian Splatting</h1>
+        <h3 class="publication-authors">
           Yogeshwar Boopathy<br>
           MSc Data Science & AI<br>
           Indian Institute of Technology, Madras<br>
           University of Birmingham
+          <hr>
         </h3>
         <div class="buttons is-centered link-block">
           <a class="button is-link" href="paper.pdf" target="_blank">📄 Paper</a>
           <a class="button is-link" href="report.pdf" target="_blank">📄 Report</a>
           <a class="button is-primary" href="https://git.cs.bham.ac.uk/projects-2023-24/yxb340" target="_blank">💻 Code</a>
-          <a class="button is-info" href="https://bham-my.sharepoint.com/..." target="_blank">📁 Data</a>
+          <a class="button is-info" href="data" target="_blank">📁 Data</a>
           <a class="button is-warning" href="https://playcanvas.com/supersplat/editor/" target="_blank">🌐 Viewer</a>
         </div>
       </div>
@@ -37,19 +38,46 @@
       <p>
         Changing from a third-person to a first-person perspective is not as straightforward as pressing a button in video games. In real life, translating exocentric (third-person) to egocentric (first-person) perspectives poses significant challenges. Despite advances using GANs, diffusion models, and other generative methods, existing techniques struggle with large viewpoint shifts, occlusions, and the loss of fine details. 
         <br><br>
-        We propose a novel approach leveraging Gaussian splatting, a rasterization-based technique that efficiently models scenes as 3D Gaussian distributions. This method achieves photorealistic rendering from sparse image datasets, reducing distortions and preserving intricate details, especially in complex hand-object interaction scenarios. 
+        We propose a novel approach leveraging Gaussian splatting, a rasterization-based technique that efficiently models scenes as 3D Gaussian distributions. This method along with our probabilistic sampling approach for optimization achieves photorealistic rendering from sparse image datasets, reducing distortions and preserving intricate details, especially in complex hand-object interaction scenarios. 
         <br><br>
         Quantitative evaluations using SSIM and PSNR on real-world datasets demonstrate significant improvements over traditional methods. Our approach advances the technical capabilities of exo-to-ego view translation, paving the way for immersive applications in robotics, virtual and augmented reality, and human-computer interaction.
       </p>
     </div>
   </section>
 
+  
+  <!-- Full-width Pipeline Illustration (img1) -->
+  <section class="section">
+    <!-- <div class="container is-widescreen has-text-centered"> -->
+    <div class="container is-max-desktop has-text-centered">
+
+      <h2 class="title is-3">Method Overview: Pipeline</h2>
+      <img src="static/images/img3.png" alt="Pipeline: Exo input → Gaussian Splatting → Ego render" style="width: 100%; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+      <p class="is-size-6 mt-2">Our pipeline: Exo-centric input → 3D Gaussian Splatting → Rendered Ego-centric View</p>
+    </div>
+  </section>
+
+
+
+  <!-- Full-width Pipeline Illustration (img1) -->
+  <section class="section">
+    <!-- <div class="container is-widescreen has-text-centered"> -->
+    <div class="container is-max-desktop has-text-centered">
+
+      <h2 class="title is-3">Example Flow</h2>
+      <img src="static/images/img2.png" alt="Pipeline: Exo input → Gaussian Splatting → Ego render" style="width: 100%; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+      <p class="is-size-6 mt-2"></p>
+    </div>
+  </section>
+
+
+  <!-- Side-by-side videos -->
   <section class="section results-carousel">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Exo-Centric vs Ego-Centric Videos</h2>
+      <!-- <h2 class="title is-3">Exo-Centric (Input) vs Ego-Centric (Rendered Output)</h2> -->
       <div class="columns is-vcentered">
         <div class="column has-text-centered">
-          <h3 class="title is-5">Exo-Centric</h3>
+          <h3 class="title is-5">Exo-Centric Inputs</h3>
           <video autoplay loop muted playsinline controls width="100%">
             <source src="static/videos/work_exo.mp4" type="video/mp4">
           </video>
@@ -61,21 +89,31 @@
           </video>
         </div>
         <div class="column has-text-centered">
-          <h3 class="title is-5">Ego-Centric</h3>
+          <h3 class="title is-5">Rendered Ego-Centric Views</h3>
           <video autoplay loop muted playsinline controls width="100%">
-            <source src="static/videos/work.mp4" type="video/mp4">
+            <source src="static/videos/work_fixed.mp4" type="video/mp4">
           </video>
           <video autoplay loop muted playsinline controls width="100%">
-            <source src="static/videos/vale1.mp4" type="video/mp4">
+            <source src="static/videos/vale1_fixed.mp4" type="video/mp4">
           </video>
           <video autoplay loop muted playsinline controls width="100%">
-            <source src="static/videos/cs1.mp4" type="video/mp4">
+            <source src="static/videos/cs1_fixed.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Scene-level Rendered Output Image (img2) -->
+  <section class="section">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">Rendered Output Snapshots</h2>
+      <img src="static/images/img1.png" alt="Rendered examples from all three scenes" style="max-width: 100%; border-radius: 10px; box-shadow: 0 0 10px #ccc;">
+      <p class="is-size-6 mt-2">Rendered ego-centric outputs for scenes: Workbench, Valley, and Coffee Shop</p>
+    </div>
+  </section>
+
+  <!-- BibTeX -->
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3">BibTeX</h2>
@@ -89,6 +127,10 @@
     </div>
   </section>
 
-  
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Template adapted from <a href="https://nerfies.github.io/" target="_blank">nerfies.github.io</a></p>
+    </div>
+  </footer>
 </body>
 </html>
